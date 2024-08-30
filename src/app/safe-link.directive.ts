@@ -8,7 +8,7 @@ import { Directive, input } from '@angular/core';
   },
 })
 export class SafeLinkDirective {
-  queryParam = input('myapp');
+  queryParam = input('myapp', { alias: 'appSafeLink' });
 
   onConfirmLeavePage(event: MouseEvent) {
     const wantsToLeave = window.confirm('Do you want to leave the app?');
