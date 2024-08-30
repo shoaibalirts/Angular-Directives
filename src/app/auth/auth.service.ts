@@ -7,7 +7,7 @@ import { Permission } from './auth.model';
 })
 export class AuthService {
   activePermission = signal<Permission>('guest');
-
+  //
   authenticate(email: string, password: string) {
     console.log(email, password);
     if (email === 'admin@example.com' && password === 'admin') {
